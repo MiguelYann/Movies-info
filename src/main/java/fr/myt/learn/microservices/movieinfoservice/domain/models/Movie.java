@@ -2,20 +2,20 @@ package fr.myt.learn.microservices.movieinfoservice.domain.models;
 
 public class Movie {
 
-    private int id;
     private String name;
+    private String description;
 
-    public Movie(int id, String name) {
-        this.id = id;
+    public Movie(String name, String description) {
         this.name = name;
+        this.description = description;
     }
 
-    public int getId() {
-        return id;
+    public String getDescription() {
+        return description;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public String getName() {
